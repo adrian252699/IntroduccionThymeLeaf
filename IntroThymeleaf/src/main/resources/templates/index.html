@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Thymeleaf</title>
+</head>
+<body>
+    <h1 th:text="${mensajeBienvenida}">TITULO DE RELLENO</h1>
+    <p> hola, <span th:text="${nombre}">nombre</span> Bienvenido al sistema</p>
+    <h3>Menu navegacion</h3>
+
+    <ul>
+        <li><a th:href="@{/saludo}">Ver Saludo Dinamico</a></li>
+        <li><a th:href="@{/catalogo}">Ver catalogo Dinamico</a></li>
+    </ul>
+</body>
+</html>
